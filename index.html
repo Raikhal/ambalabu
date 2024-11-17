@@ -1,71 +1,293 @@
 <!DOCTYPE html>
-<head
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="styles.css" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-  rel="stylesheet"
-/>
-<script
-  src="https://kit.fontawesome.com/4c536a6bd5.js"
-  crossorigin="anonymous"
-></script>
-<script src="script.js" defer></script>
-<title>Calculator</title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website- Ambalabu</title>
+    <!-- Fonts Awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<div style="position: relative; width: 100%; height: 0; padding-top: 250.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGNslXG50c/v3JzORP9Z30oc6k8XQ8GTA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGNslXG50c&#x2F;v3JzORP9Z30oc6k8XQ8GTA&#x2F;view?utm_content=DAGNslXG50c&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Lab Fisika &amp; Lantai 3</a> by ggegejan
-    <main class="main">
+<body>
 
-        <div class="calculator">
-          <div class="screen">
-            <div class="screen-last" id="lastOperationScreen"></div>
-            <div class="screen-current" id="currentOperationScreen">0</div>
-          </div>
-          <div class="buttons-grid">
-            <button
-              class="btn btn-red span-2"
-              id="clearBtn"
-              onclick="this.blur();"
-            >
-              CLEAR
-            </button>
-            <button
-              class="btn btn-blue span-2"
-              id="deleteBtn"
-              onclick="this.blur();"
-            >
-              DELETE
-            </button>
-            <button class="btn" onclick="this.blur();" data-number>7</button>
-            <button class="btn" onclick="this.blur();" data-number>8</button>
-            <button class="btn" onclick="this.blur();" data-number>9</button>
-            <button class="btn" onclick="this.blur();" data-operator>÷</button>
-  
-            <button class="btn" onclick="this.blur();" data-number>4</button>
-            <button class="btn" onclick="this.blur();" data-number>5</button>
-            <button class="btn" onclick="this.blur();" data-number>6</button>
-            <button class="btn" onclick="this.blur();" data-operator>×</button>
-  
-            <button class="btn" onclick="this.blur();" data-number>1</button>
-            <button class="btn" onclick="this.blur();" data-number>2</button>
-            <button class="btn" onclick="this.blur();" data-number>3</button>
-            <button class="btn" onclick="this.blur();" data-operator>−</button>
-  
-            <button class="btn" onclick="this.blur();" id="pointBtn">.</button>
-            <button class="btn" onclick="this.blur();" data-number>0</button>
-            <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
-            <button class="btn" onclick="this.blur();" data-operator>+</button>
-          </div>
+    <header>
+
+        <div class="user">
+            <img src="shray.jpeg" alt="">
+            <h3 class="name">Ambalabu</h3>
+            <p class="post">kelompok 7</p>
         </div>
-      </main>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!--Home section starts-->
+
+    <section class="home" id="home">
+
+        <h3>Hi There !</h3>
+
+        <h1>kita <span>Ambalabu</span></h1>
+
+        <p>Developer skilled and work upon variour languages & technology such as  HTML , CSS , Javascript , Bootstrap , Tailwind CSS , React JS   as well as My SQL, C++/C, Java , Python, Batchfile .Experience in  Project making & teaming with people.  </p>
+
+        <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+
+        <div class="share">
+            <a href="mailto:anusthan.singh12@gmail.com" class="fab fa-google" target="_blank"></a>
+            <a href="https://github.com/anusthan12" class="fab fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/anusthan-singh-b436a9237" class="fab fa-linkedin" target="_blank"></a>
+            <a href="https://www.instagram.com/anusthan_12/" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://codepen.io/anusthan12/pens/showcase" class="fab fa-codepen" target="_blank"></a>        
+        </div>
+    
+
+    </section>
+    <!--Home section Ends-->
+
+    <!--About section Starts-->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><span>nama </span> anggota</h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> nama:</span> Muhammad Raikhal Al Fajri Kusumaputra</h3>
+                <h3> <span> umur:</span> 15 </h3>
+                <h3> <span> job:</span> programmer </h3>
+                <h3> <span> peran:</span> Student | Web developer | Product Engineer</h3>
+            
+                 <a href="Resume.pdf" download="CV.pdf"><button class="btn">Download Resume <i class="fas fa-download"></i></button></a>
+
+            </div>
+            <div class="counter">
+                <div class="box">
+                   
+                    <span>>> 3+</span>
+                    <h3>ambay</h3>
+                </div>
+
+                <div class="box">
+                    <span>>> 2+</span>
+                    <h3>proyek </h3>
+                </div>
+
+                <div class="box">
+                    <span> >> 1000+</span>
+                    <h3>GitHub Views</h3>
+                </div>
+
+                <div class="box">
+                    <span>>>999+</span>
+                    <h3>Contribution</h3>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--About section Ends-->
+
+    <!--Education section starts-->
+
+    <section class="education" id="education">
+<div>
+
+        <h1 class="heading"> My <span>Education</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>HTML&CSS</span>
+                <h3>Pirple</h3>
+                <p>In college, I got interested in web development so I took a front-end course from Pirple and completed it successfully. Having finished with my basics, I went on YouTube and W3School to expand my knowledge in this area and began developing the basic structures of a website </p>
+
+            </div>
+
+
+            
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Wind tail CSS & Bootstrap</span>
+                <h3>Youtube</h3>
+                <p>It has been my passion to keep up with latest and technologies ,this has led me to discover Wind-tail-CSS that make it simpler to create a Responsivly and faster website with less effort, it reduces time upto 40%. This alone is quite mindblowing.As part of my journey, I also met Bootstrap, and that was also an amazing experience and a much more creative thing to learn. </p>
+            </div>
+
+            
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>JavaScript & React JS</span>
+                <h3>Youtube</h3>
+                <p>When I was done with the front-end part, I thought it would be wise to expand to the back-end as well. Therefore, I selected javascript as my first back-end language because 90% of industries are covered by this language and it is very trusted. After this all I did learn My Sql and database in my university and also php</p>
+            </div>
+
+            
+        </div>
+
+            <div>
+            <div class="row">
+
+
+                <div class="progress">
+                    <h3> HTML&CSS &nbsp;<span>95%</span> </h3>
+                    <div class="bar bar-2-1"><span></span></div>
+                    <h3> TAILWIND CSS | BootStrap &nbsp;<span>75%</span> </h3>
+                    <div class="bar bar-1-1"><span></span></div>
+                    <h3> Javascript & React JS &nbsp;<span>70%</span> </h3>
+                    <div class="bar bar-2-3"><span></span></div>
+                    <h3> My SQL &nbsp;<span>70%</span> </h3>
+                    <div class="bar bar-2-2"><span></span></div>
+                   
+                </div>
+
+                <div class="progress">
+                   
+                    
+                    <h3>C++/C &nbsp;<span>74%</span> </h3>
+                    <div class="bar bar-1-3"><span></span></div>
+
+                    <h3>Python &nbsp;<span>60%</span> </h3>
+                    <div class="bar bar-1-4"><span></span></div>
+                    
+                    <h3> Batchfile &nbsp;<span>60%</span> </h3>
+                    <div class="bar bar-1-2"><span></span></div>
+                    
+
+                    <h3>Autocad &nbsp;<span>59%</span> </h3>
+                    <div class="bar bar-1-5"><span></span></div>
+                    
+                </div>
+        
+               
+        
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!--Education section Ends-->
+
+    <!--Portfolio section starts-->
+    <section class="portfolio" id="portfolio">
+
+
+        <h1 class="heading"> My <span>Portfolio</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="https://anusthan12.github.io/Translator/" target="_blank">  <img src="translator.png" alt=""></a>
+              </div>
+
+              <div class="box">
+                <a href="https://anusthan12.github.io/Weatherapp/" target="_blank">  <img src="weatherapp.jpg" alt=""></a>
+              </div>
+
+              <div class="box">
+                <a href="https://github.com/anusthan12/Indestructible_Password_Generator" target="_blank">  <img src="nodejs.jpg" alt=""></a>
+              </div>
+              
+            
+            <div class="box">
+               <a href="https://anusthan12.github.io/QR_Code_Generator/" target="_blank"> <img src="QR.jpg" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="https://anusthan12.github.io/iDevleoper/" target="_blank">  <img src="photo6.jpg" alt=""></a>
+              </div>
+
+            <div class="box">
+               <a href="https://anusthan12.github.io/Neocube/" target="_blank"> <img src="photo4.jpg" alt="">
+               </a>
+            </div>
+
+            <div class="box">
+               <a href="https://anusthan12.github.io/Gradient_generator/" target="_blank"> <img src="gradient.jpg" alt=""> </a>
+            </div>
+
+            <div class="box">
+               <a href="https://anusthan12.github.io/Myntra/" target="_blank"> <img src="myntra.jpg" alt=""> </a>
+            </div>
+
+
+            <div class="box">
+                <a href="https://github.com/anusthan12/Batch_Virus_Codes" target="_blank"> <img src="Batch.jpg" alt=""> </a> 
+            </div>
+
+        </div>
+
+    </section>
+    <!--Portfolio section Ends-->
+
+    <!--Contact Section Starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>Contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">Contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> anusthan.singh12@gmail.com </h3>
+                    <!-- <h3> <i class="fa fa-instagram"></i> +91  </h3> -->
+                    
+                    <h3> <i class="fas fa-map-marker-alt"></i> Nagpur, India-441110 </h3>
+                </div>
+            </div>
+            
+            <form action="">
+
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn">Send <i class="fas fa-paper-plane"></i></button>
+            
+            </form>
+        
+        </div>
+
+    </section>
+
+    <!--Contact Section Ends -->
+
+    <!--Scroll top button-->
+
+    <a href="#home" class="top">
+        <img src="scroll-top-img.png" alt="">
+    </a>
+
+    <!-- Jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
