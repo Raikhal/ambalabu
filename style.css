@@ -5,12 +5,10 @@
 }
 
 *{
-font-family: 'Nunito', sans-serif;
-margin: 0;padding: 0;
+margin: 5;padding: 5;
 box-sizing: border-box;
 text-decoration: none;
 outline: none; border: none;
-text-transform: all .2s linear;
 }
 
 *::selection{
@@ -42,8 +40,7 @@ body{
 }
 
 
-section
-{
+section{
     min-height: 100vh;
     padding: 1rem;
  }
@@ -226,6 +223,7 @@ color: var(--yellow);
     flex: 1 1 48rem;
     padding: 2rem 1rem;
     padding-left: 6rem;
+    border: #f9ca24;
 }
 
 .about .row .info h3{
@@ -237,39 +235,24 @@ color: var(--yellow);
 
 .about .row .info h3 span{
     color: #eee;
-    padding: 0.5rem;
+    padding: 0 .5rem;
 }
 
-
-
-.about .row .box img{
-    height: 400px;
-    width : 400px;
-    border: #f9ca24;
-    border-radius:12px;
-
-}
-
-.about .row .box .indira{
-    height: 400px;
-    width : 400px;
-    border: #f9ca24;
-    border-radius:12px;
-    
-}
-
-.deskripsi .box-container{
+.about .row  .counter{
+    flex: 1 1 48rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 1px;
-    padding-left: 1px;
+}
 
+.about.box{
+    border: 15px;
+    border-radius: 5px;
 }
 
 
-.deskripsi .box-container .box{
+
+.education .box-container .box{
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
@@ -278,7 +261,7 @@ color: var(--yellow);
 
 }
 
-.deskripsi .box-container .box span{
+.education .box-container .box span{
 font-size: 1.3rem;
 background: #222;
 color: #fff;
@@ -287,20 +270,20 @@ border-radius: 5rem;
 }
 
 
-.deskripsi .box-container .box h3{
+.education .box-container .box h3{
     font-size: 2rem;
     color: #fff;
     padding-top: 1.5rem;
 
 }
 
-.deskripsi .box-container .box p{
+.education .box-container .box p{
     font-size: 1.4rem;
     color: #eee;
     padding-top: 1rem 0;
 }
 
-.deskripsi .box-container .box i{
+.education .box-container .box i{
  position: absolute;
  top: -1.5rem; left: -2.5rem;
  height: 5rem;
@@ -313,9 +296,71 @@ border-radius: 5rem;
  background: var(--yellow);
 }
 
+/*new education*/
+
+.education .row .progress{
+    flex:1 1 40rem;
+}
+
+.education .row .progress h3{
+    color:#eee;
+    font-weight: normal;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.education .row .progress .bar{
+    box-shadow: #fff;
+    border-radius: 5rem;
+    height:2rem;
+    padding:.5rem;
+    margin:1rem 0;
+}
+
+.education .row .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--yellow);
+    border-radius: 5rem;
+}
+
+.education .row .progress .bar-1-1 span{
+    width: 75%;
+}
+
+.education .row .progress .bar-1-2 span{
+    width: 60%;
+}
+
+.education .row .progress .bar-1-3 span{
+    width: 74%;
+}
+
+.education .row .progress .bar-1-4 span{
+    width: 60%;
+}
+
+.education .row .progress .bar-1-5 span{
+    width: 59%;
+}
+.education .row .progress .bar-2-1 span{
+    width: 95%;
+}
+
+.education .row .progress .bar-2-2 span{
+    width: 70%;
+}
+
+.education .row .progress .bar-2-3 span{
+    width: 70%;
+}
 
 
-.produk .box-container{
+
+
+.portfolio .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,7 +369,7 @@ border-radius: 5rem;
 }
 
 
-.produk .box-container .box{
+.portfolio .box-container .box{
     height: 20rem;
     width: 26rem;
     border-radius: 1rem;
@@ -333,13 +378,13 @@ border-radius: 5rem;
     cursor: pointer;
 }
 
-.produk .box-container .box img{
+.portfolio .box-container .box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.produk .box-container .box:hover img {
+.portfolio .box-container .box:hover img {
    transform: scale(1.2);
 }
 
